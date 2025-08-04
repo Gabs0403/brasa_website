@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Brasa Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive website built with React and Tailwind CSS.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🎨 Modern design with Tailwind CSS
+- 📱 Fully responsive layout
+- ⚡ Fast and optimized performance
+- 🎯 Clean and semantic HTML structure
+- 🔧 Easy to customize and extend
 
-### `npm start`
+## Sections
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Navigation**: Clean header with smooth scrolling navigation
+- **Hero**: Eye-catching landing section with call-to-action
+- **About**: Company information with feature highlights
+- **Services**: Service offerings with interactive cards
+- **Contact**: Contact form for lead generation
+- **Footer**: Comprehensive footer with links and information
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 14 or higher)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd Brasa_Website
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+```bash
+npm start
+```
 
-### `npm run eject`
+The application will open in your browser at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from Create React App (one-way operation)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React** - Frontend framework
+- **Tailwind CSS** - Utility-first CSS framework
+- **Create React App** - Development environment
+- **PostCSS** - CSS processing
+- **Autoprefixer** - CSS vendor prefixing
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── App.js          # Main application component
+├── index.js        # Application entry point
+├── index.css       # Global styles with Tailwind directives
+└── logo.svg        # React logo (unused in current version)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+public/
+├── index.html      # HTML template
+└── favicon.ico     # Site favicon
 
-### Code Splitting
+tailwind.config.js  # Tailwind CSS configuration
+postcss.config.js   # PostCSS configuration
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Customization
 
-### Analyzing the Bundle Size
+### Colors
+The website uses a blue/indigo color scheme. You can customize colors by modifying the Tailwind classes in `App.js` or extending the theme in `tailwind.config.js`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Content
+Update the content in `App.js` to match your business needs. The component is well-structured and easy to modify.
 
-### Making a Progressive Web App
+### Styling
+All styling is done with Tailwind CSS utility classes. Refer to the [Tailwind CSS documentation](https://tailwindcss.com/docs) for available classes and customization options.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Deployment
 
-### Advanced Configuration
+To build the project for production:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm run build
+```
 
-### Deployment
+This creates a `build` folder with optimized production files that can be deployed to any static hosting service.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the [MIT License](LICENSE).
