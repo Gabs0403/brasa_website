@@ -1,39 +1,57 @@
-import React from "react";
-import logoBrasa from '../brasa-logo.png';
+import { Link } from "react-router-dom";
+import logoBrasa from "../brasa-logo.png";
 
-function NavBar({ setPage }){
-     
+export default function Navbar() {
+  return (
+    <div className="relative">
+      <nav className="bg-yellow-100 fixed top-0 right-0 left-0 h-24 z-50 shadow-md">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-24">
+            
+            <div className="flex items-center space-x-4">
+              <img src={logoBrasa} alt="Logo BRASA" className="h-24 w-auto" />
+              <h1 className="flex flex-col leading-tight text-xl font-bold font-serif">
+                BRASA
+                <span className="text-lg font-normal">FGCU</span>
+              </h1>
+            </div>
 
-
-    return (
-        <div className="relative">
-            <nav className="bg-slate-200 fixed top-0 right-0 left-0 border-b border-black h-24">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-                    <div className="flex justify-start h-24">   
-                        <div className="flex items-center space-x-8">
-                            <img src={logoBrasa} alt="Logo BRASA" className="h-24 w-auto pr-4" />
-                            <a href="#home" className="relative group font-serif text-black-600 hover:text-green-600 transition-colors text-lg">
-                                Home
-                                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 bg-green-600 "></span>
-                            </a>
-                            <a href="#home" className="relative group font-serif text-black-600 hover:text-gray-900 transition-colors text-lg">
-                                Quem Somos?
-                                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
-                            </a>
-                            <a href="#home" className="relative group font-serif text-black-600 hover:text-gray-900 transition-colors text-lg">
-                                Guia do Freshman
-                                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
-                            </a>
-                            <a href="#home" className="relative group font-serif text-black-600 hover:text-gray-900 transition-colors text-lg">
-                                Eventos
-                                <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-black scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"></span>
-                            </a>   
-                        </div>
-                    </div>
-                </div>
-            </nav>
+            
+            <div className="flex space-x-4">
+              <Link
+                to="/"
+                className="px-4 py-2 text-black hover:bg-blue-300/50 rounded-lg transition font-serif"
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="px-4 py-2 text-black hover:bg-blue-300/50 rounded-lg transition font-serif"
+              >
+                Quem Somos?
+              </Link>
+              <Link
+                to="/freshman-guide"
+                className="px-4 py-2 text-black hover:bg-blue-300/50 rounded-lg transition font-serif"
+              >
+                Guia do Freshman
+              </Link>
+              <Link
+                to="/events"
+                className="px-4 py-2 text-black hover:bg-blue-300/50 rounded-lg transition font-serif"
+              >
+                Eventos
+              </Link>
+              <Link
+                to="https://getinvolved.fgcu.edu/organization/httpswwwgobrasaorg"
+                className="px-4 py-2 rounded-lg bg-green-500 text-white hover:bg-blue-300/50 transition font-serif"
+              >
+                Seja Membro!
+              </Link>
+            </div>
+          </div>
         </div>
-    )
+      </nav>
+    </div>
+  );
 }
-
-export default NavBar;
