@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./views/Home";
-import QuemSomos from "./views/About";
-import GuiaFreshman from "./views/FreshmanGuide";
-import Eventos from "./views/Events";
+import About from "./views/About";
+import FreshmanGuide from "./views/FreshmanGuide";
+import Events from "./views/Events";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,10 +12,11 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/quem-somos" element={<QuemSomos />} />
-        <Route path="/guia-freshman" element={<GuiaFreshman />} />
-        <Route path="/eventos" element={<Eventos />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/guia-freshman" element={<FreshmanGuide />} />
+        <Route path="/eventos" element={<Events />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
