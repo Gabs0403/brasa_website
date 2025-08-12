@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import audi from '../brasa-board.jpeg';
-import freshman_image from '../brasa-sunset.jpeg'
+import audi from '../images/brasa-board.jpeg';
+import freshman_image from '../images/brasa-sunset.jpeg'
 import EventsCarousel from "../components/EventsCarousel";
 
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoBrasa from "../brasa-logo.png";
+import logoBrasa from "../images/brasa-logo.png";
 
 export default function Navbar() {
   return (

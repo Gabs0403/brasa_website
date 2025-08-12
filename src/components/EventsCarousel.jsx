@@ -14,7 +14,7 @@ const events = [
   },
   {
     id: 2,
-    title: "Brasa Summit Americas 2025",
+    title: "BRASA Summit Américas 2025",
     date: "11/12 Outubro 2025",
     desc: "A maior conferência voltada para estudantes brasileiros na América do Norte," 
     + "reunindo anualmente estudantes da América do Norte e líderes que estão construindo uma carreira de impacto no Brasil e no mundo.",
@@ -23,7 +23,7 @@ const events = [
 
 function EventsCarousel() {
   return (
-    <div className="w-full py-12 bg-yellow-50 px-12">
+    <div className="w-full py-16 bg-yellow-50 px-12">
       <h2 className="text-3xl font-bold font-serif text-center mb-8 text-blue-500">
         Próximos Eventos
       </h2>

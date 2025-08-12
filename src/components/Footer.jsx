@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
-import logoBrasa from '../brasa-logo.png'
+import logoBrasa from '../images/brasa-logo.png'
 import { Link } from "react-router-dom";
 
 
