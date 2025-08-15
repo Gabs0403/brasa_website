@@ -6,7 +6,7 @@ import socialCoordPhoto1 from '../images/photo-socialcoord-1.jpeg';
 import socialCoordPhoto2 from '../images/photo-socialcoord-2.jpeg';
 import advisorPhoto1 from '../images/photo-advisor-1.jpeg';
 import advisorPhoto2 from '../images/photo-advisor-2.jpeg';
-
+import vpPhoto from '../images/photo-vp.jpeg';
 
 function About(){
     return (
@@ -39,7 +39,7 @@ function About(){
                     </div>
                     <div className="p-8 h-96 shadow-xl rounded-2x1 flex flex-col items-center bg-white">
                         <img
-                            src = {treasurerPhoto}
+                            src = {vpPhoto}
                             className="w-40 h-40 rounded-full"
                         />
                         <div className='pt-4'>
