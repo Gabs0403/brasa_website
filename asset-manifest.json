@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5054f3ac.css",
+    "main.js": "/static/js/main.d7928ab1.js",
+    "static/js/453.2e74cec0.chunk.js": "/static/js/453.2e74cec0.chunk.js",
+    "static/media/photo-advisor-2.jpeg": "/static/media/photo-advisor-2.2048eb685f89f0612a96.jpeg",
+    "static/media/photo-secretary.jpeg": "/static/media/photo-secretary.35acf6ac7221d47989a1.jpeg",
+    "static/media/brasa-board.jpeg": "/static/media/brasa-board.45f1b0020864a69de9cf.jpeg",
+    "static/media/photo-eventcoord.jpeg": "/static/media/photo-eventcoord.42ceda8bcdd41eef423a.jpeg",
+    "static/media/photo-advisor-1.jpeg": "/static/media/photo-advisor-1.88f8d6680ee96be8bb23.jpeg",
+    "static/media/photo-treasurer.jpeg": "/static/media/photo-treasurer.974a1e8effaf625b05ca.jpeg",
+    "static/media/brasa-sunset.jpeg": "/static/media/brasa-sunset.81f9c7f277363d6cedb1.jpeg",
+    "static/media/brasa-logo.png": "/static/media/brasa-logo.086d8c93f68bac52cba1.png",
+    "static/media/photo-socialcoord-2.jpeg": "/static/media/photo-socialcoord-2.87db0afa15f24accd925.jpeg",
+    "static/media/photo-socialcoord-1.jpeg": "/static/media/photo-socialcoord-1.f842395fb38099f8e35d.jpeg",
+    "static/media/photo-vp.jpeg": "/static/media/photo-vp.04ed2d587b2f5431a155.jpeg",
+    "static/media/photo-president.jpeg": "/static/media/photo-president.5ba67d69eb025021af88.jpeg",
+    "index.html": "/index.html",
+    "main.5054f3ac.css.map": "/static/css/main.5054f3ac.css.map",
+    "main.d7928ab1.js.map": "/static/js/main.d7928ab1.js.map",
+    "453.2e74cec0.chunk.js.map": "/static/js/453.2e74cec0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5054f3ac.css",
+    "static/js/main.d7928ab1.js"
+  ]
+}
