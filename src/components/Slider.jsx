@@ -18,7 +18,7 @@ function Slider({ images }) {
       <img
         src={images[current].src}
         alt={images[current].alt || ""}
-        className="w-full h-full object-cover transition-all duration-500"
+        className={"w-full h-full object-cover transition-all duration-500 object-center"}
       />
 
       {/* Buttons */}

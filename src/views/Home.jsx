@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import audi from '../images/brasa-board.jpeg';
+import coverPageImg from '../images/home-page-cover.jpeg';
 import freshman_image from '../images/brasa-sunset.jpeg'
 import EventsCarousel from "../components/EventsCarousel";
 
@@ -11,7 +11,7 @@ function Home() {
             
             <div
                 className="relative min-h-screen flex items-center justify-center bg-cover bg-center shadow-xl"
-                style={{ backgroundImage: `url(${audi})` }}
+                style={{ backgroundImage: `url(${coverPageImg})` }}
             >
                 <div className="absolute inset-0"></div>
 
@@ -21,7 +21,7 @@ function Home() {
                             BRAZILIAN STUDENT ASSOCIATION
                         </h1>
                         <span className="block text-lg sm:text-xl font-bold mb-6 text-white">
-                            Florida Gulf Coast University
+                            at Florida Gulf Coast University
                         </span>
                         <p className="text-white mb-8 text-base sm:text-lg leading-relaxed">
                             Somos uma organização dedicada a conectar estudantes brasileiros no exterior. 
