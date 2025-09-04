@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brasa_website/static/css/main.87d90133.css",
-    "main.js": "/brasa_website/static/js/main.fce51f4f.js",
+    "main.js": "/brasa_website/static/js/main.5a6d238e.js",
     "static/js/453.2e74cec0.chunk.js": "/brasa_website/static/js/453.2e74cec0.chunk.js",
     "static/media/photo-advisor-2.jpeg": "/brasa_website/static/media/photo-advisor-2.2048eb685f89f0612a96.jpeg",
     "static/media/photo-secretary.jpeg": "/brasa_website/static/media/photo-secretary.35acf6ac7221d47989a1.jpeg",
@@ -36,11 +36,11 @@
     "static/media/photo-president.jpeg": "/brasa_website/static/media/photo-president.5ba67d69eb025021af88.jpeg",
     "index.html": "/brasa_website/index.html",
     "main.87d90133.css.map": "/brasa_website/static/css/main.87d90133.css.map",
-    "main.fce51f4f.js.map": "/brasa_website/static/js/main.fce51f4f.js.map",
+    "main.5a6d238e.js.map": "/brasa_website/static/js/main.5a6d238e.js.map",
     "453.2e74cec0.chunk.js.map": "/brasa_website/static/js/453.2e74cec0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87d90133.css",
-    "static/js/main.fce51f4f.js"
+    "static/js/main.5a6d238e.js"
   ]
 }
