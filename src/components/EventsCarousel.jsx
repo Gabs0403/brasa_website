@@ -6,16 +6,11 @@ import 'swiper/css/pagination';
 import { Link } from 'react-router-dom';
 
 const events = [
+  
   {
     id: 1,
-    title: "20th Annual RHA Casino Night",
-    date: "22 Agosto 2025",
-    desc: "Prepare-se para ir com tudo na 20ª Noite Anual do Cassino, organizada pela RHA!",
-  },
-  {
-    id: 2,
     title: "BRASA Summit Américas 2025",
-    date: "11/12 Outubro 2025",
+    date: "11-12 Outubro 2025",
     desc: "A maior conferência voltada para estudantes brasileiros na América do Norte, " +
       "reunindo anualmente estudantes da América do Norte e líderes que estão construindo uma carreira de impacto no Brasil e no mundo.",
   }
@@ -50,6 +45,7 @@ function EventsCarousel() {
                 <Link
                   className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
                   to="/events"
+                  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 >
                   Saiba Mais
                 </Link>

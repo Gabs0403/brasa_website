@@ -31,6 +31,7 @@ function Home() {
                         </p>
                         <Link
                             to="/about"
+                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                             className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-green-600 text-white text-base sm:text-lg font-semibold rounded-lg 
                                        hover:bg-green-500 hover:scale-105 transform 
                                        transition-all duration-300 ease-in-out shadow-lg"
@@ -57,11 +58,12 @@ function Home() {
                                 para aproveitar ao máximo essa nova fase.
                             </p>
                             <Link
-                                to="/guia"
+                                // to="/guia"
+                                // onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                                 className="inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-green-700 text-white text-base sm:text-lg font-medium uppercase tracking-wider 
                                            hover:bg-green-800 hover:scale-105 transition-all duration-300 shadow-lg"
                             >
-                                Mais Informações
+                                Em Breve...
                             </Link>
                         </div>
 
@@ -78,7 +80,7 @@ function Home() {
             </div>
 
             
-            <div className="pt-2 px-4 sm:px-8">
+            <div className="pt-2">
                 <EventsCarousel />
             </div>
 

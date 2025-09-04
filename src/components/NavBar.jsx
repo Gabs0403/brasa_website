@@ -23,30 +23,34 @@ export default function Navbar() {
             <div className="hidden md:flex space-x-4">
               <Link
                 to="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="px-4 py-2 text-black hover:bg-blue-300/50 rounded-lg transition font-serif"
               >
                 Home
               </Link>
               <Link
                 to="/about"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="px-4 py-2 text-black hover:bg-blue-300/50 rounded-lg transition font-serif"
               >
                 Quem Somos?
               </Link>
-              <Link
+              {/* <Link
                 to="/freshman-guide"
                 className="px-4 py-2 text-black hover:bg-blue-300/50 rounded-lg transition font-serif"
               >
                 Guia do Freshman
-              </Link>
+              </Link> */}
               <Link
                 to="/events"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="px-4 py-2 text-black hover:bg-blue-300/50 rounded-lg transition font-serif"
               >
                 Eventos
               </Link>
               <Link
                 to="https://getinvolved.fgcu.edu/organization/httpswwwgobrasaorg"
+                
                 className="px-4 py-2 rounded-lg bg-green-600 text-white hover:bg-green-700 transition font-serif shadow-lg"
               >
                 Seja Membro!
@@ -75,14 +79,27 @@ export default function Navbar() {
             </button>
           </div>
           <div className="flex flex-col space-y-4 px-6">
-            <Link to="/" onClick={() => setIsOpen(false)} className="text-lg font-serif hover:text-green-700">Home</Link>
-            <Link to="/about" onClick={() => setIsOpen(false)} className="text-lg font-serif hover:text-green-700">Quem Somos?</Link>
-            <Link to="/freshman-guide" onClick={() => setIsOpen(false)} className="text-lg font-serif hover:text-green-700">Guia do Freshman</Link>
-            <Link to="/events" onClick={() => setIsOpen(false)} className="text-lg font-serif hover:text-green-700">Eventos</Link>
+            <Link to="/" onClick={() => {setIsOpen(false);
+                                          window.scrollTo({ top: 0, behavior: "smooth" });
+                                        }} 
+                className="text-lg font-serif hover:text-green-700">Home
+            </Link>
+            <Link to="/about" onClick={() => {setIsOpen(false);
+                                          window.scrollTo({ top: 0, behavior: "smooth" });
+                                        }} 
+                    className="text-lg font-serif hover:text-green-700">Quem Somos?
+            </Link>
+            {/* <Link to="/freshman-guide" onClick={() => setIsOpen(false)} className="text-lg font-serif hover:text-green-700">Guia do Freshman</Link> */}
+            <Link to="/events" onClick={() => {setIsOpen(false);
+                                          window.scrollTo({ top: 0, behavior: "smooth" });
+                                        }} 
+                   className="text-lg font-serif hover:text-green-700">Eventos
+            </Link>
             <Link
               to="https://getinvolved.fgcu.edu/organization/httpswwwgobrasaorg"
               onClick={() => setIsOpen(false)}
               className="px-4 py-2 text-center rounded-lg bg-green-600 text-white hover:bg-green-700 transition font-serif shadow-lg"
+              target="_blank"
             >
               Seja Membro!
             </Link>

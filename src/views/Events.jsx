@@ -55,7 +55,7 @@ function Events() {
         </h1>
 
         
-        <div className="p-4 sm:p-6 md:p-8 h-auto md:h-96 shadow-xl rounded-lg bg-white grid grid-cols-1 md:grid-cols-5 gap-4">
+        {/* <div className="p-4 sm:p-6 md:p-8 h-auto md:h-96 shadow-xl rounded-lg bg-white grid grid-cols-1 md:grid-cols-5 gap-4">
           <img src={logoBrasa} className="w-full h-48 md:h-full object-contain" />
           <div className="col-span-1 md:col-span-3 flex flex-col justify-center p-2 md:p-4">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-green-800">20th Annual RHA Casino Night</h1>
@@ -68,7 +68,7 @@ function Events() {
               Mais Informações
             </button>
           </div>
-        </div>
+        </div> */}
 
         
         <div className="p-4 sm:p-6 md:p-8 h-auto md:h-96 shadow-xl rounded-lg bg-white grid grid-cols-1 md:grid-cols-5 gap-4 mt-4">

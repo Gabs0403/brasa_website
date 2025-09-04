@@ -43,7 +43,6 @@ function About() {
             { name: "João Tamez", role: "Social Media", photo: socialCoordPhoto1 },
             { name: "Renan Santos", role: "Social Media", photo: socialCoordPhoto2 },
             { name: "Clarisse Halpern", role: "Advisor", photo: advisorPhoto1 },
-            { name: "Bruno Halpern", role: "Advisor", photo: advisorPhoto2 }
           ].map((member, index) => (
             <div
               key={index}

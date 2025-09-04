@@ -27,10 +27,10 @@ function Footer(){
         <div>
           <h3 className="text-yellow-400 font-semibold mb-4">Links Rápidos</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/" className="hover:underline">Home</Link></li>
-            <li><Link to="/about" className="hover:underline">Quem Somos</Link></li>
-            <li><Link to="/guia-freshman" className="hover:underline">Guia do Freshman</Link></li>
-            <li><Link to="/eventos" className="hover:underline">Eventos</Link></li>
+            <li><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="hover:underline">Home</Link></li>
+            <li><Link to="/about" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="hover:underline">Quem Somos</Link></li>
+            {/* <li><Link to="/guia-freshman" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="hover:underline">Guia do Freshman</Link></li> */}
+            <li><Link to="/events" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="hover:underline">Eventos</Link></li>
           </ul>
         </div>
 
@@ -38,12 +38,10 @@ function Footer(){
         <div>
           <h3 className="text-yellow-400 font-semibold mb-4">Siga-nos</h3>
           <div className="flex space-x-4 text-xl">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-yellow-400">
+            <a href="https://www.instagram.com/brasafgcu/" target="_blank" rel="noreferrer" className="hover:text-yellow-400">
               <FaInstagram />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-yellow-400">
-              <FaFacebook />
-            </a>
+            
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-yellow-400">
               <FaLinkedin />
             </a>
