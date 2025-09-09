@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/brasa_website/static/css/main.87d90133.css",
-    "main.js": "/brasa_website/static/js/main.5a6d238e.js",
+    "main.css": "/brasa_website/static/css/main.9747e5eb.css",
+    "main.js": "/brasa_website/static/js/main.e5b1afcd.js",
     "static/js/453.2e74cec0.chunk.js": "/brasa_website/static/js/453.2e74cec0.chunk.js",
     "static/media/photo-advisor-2.jpeg": "/brasa_website/static/media/photo-advisor-2.2048eb685f89f0612a96.jpeg",
     "static/media/photo-secretary.jpeg": "/brasa_website/static/media/photo-secretary.35acf6ac7221d47989a1.jpeg",
@@ -13,6 +13,7 @@
     "static/media/brasaSunset(8).jpeg": "/brasa_website/static/media/brasaSunset(8).b17b58106a7a37b6da66.jpeg",
     "static/media/photo-treasurer.jpeg": "/brasa_website/static/media/photo-treasurer.974a1e8effaf625b05ca.jpeg",
     "static/media/brasaSunset(2).jpeg": "/brasa_website/static/media/brasaSunset(2).38459bdf938c660c15bf.jpeg",
+    "static/media/flyer brasa kickoff.jpeg": "/brasa_website/static/media/flyer brasa kickoff.b4d967435c13d7307b86.jpeg",
     "static/media/summitInovationBrasa (5).jpeg": "/brasa_website/static/media/summitInovationBrasa (5).0adac671b78cd915972c.jpeg",
     "static/media/brasaSunset(3).jpeg": "/brasa_website/static/media/brasaSunset(3).35a5912672cfe6bd62be.jpeg",
     "static/media/summitInovationBrasa (6).jpeg": "/brasa_website/static/media/summitInovationBrasa (6).371cf7bb2bd65443249f.jpeg",
@@ -30,17 +31,18 @@
     "static/media/brasa-logo.png": "/brasa_website/static/media/brasa-logo.086d8c93f68bac52cba1.png",
     "static/media/summitInovationBrasa (1).jpeg": "/brasa_website/static/media/summitInovationBrasa (1).407a65708bd87eaa1c26.jpeg",
     "static/media/summitInovationBrasa (2).jpeg": "/brasa_website/static/media/summitInovationBrasa (2).343b2dbd701b229586b1.jpeg",
+    "static/media/brasaSummit2025flyer.jpg": "/brasa_website/static/media/brasaSummit2025flyer.bd17e216aca9dcff7576.jpg",
     "static/media/photo-socialcoord-2.jpeg": "/brasa_website/static/media/photo-socialcoord-2.87db0afa15f24accd925.jpeg",
     "static/media/photo-socialcoord-1.jpeg": "/brasa_website/static/media/photo-socialcoord-1.f842395fb38099f8e35d.jpeg",
     "static/media/photo-vp.jpeg": "/brasa_website/static/media/photo-vp.04ed2d587b2f5431a155.jpeg",
     "static/media/photo-president.jpeg": "/brasa_website/static/media/photo-president.5ba67d69eb025021af88.jpeg",
     "index.html": "/brasa_website/index.html",
-    "main.87d90133.css.map": "/brasa_website/static/css/main.87d90133.css.map",
-    "main.5a6d238e.js.map": "/brasa_website/static/js/main.5a6d238e.js.map",
+    "main.9747e5eb.css.map": "/brasa_website/static/css/main.9747e5eb.css.map",
+    "main.e5b1afcd.js.map": "/brasa_website/static/js/main.e5b1afcd.js.map",
     "453.2e74cec0.chunk.js.map": "/brasa_website/static/js/453.2e74cec0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87d90133.css",
-    "static/js/main.5a6d238e.js"
+    "static/css/main.9747e5eb.css",
+    "static/js/main.e5b1afcd.js"
   ]
 }
