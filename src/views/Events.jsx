@@ -1,5 +1,6 @@
 import Slider from '../components/Slider.jsx';
 import logoBrasa from '../images/brasa-logo.png';
+import { Link } from 'react-router-dom';
 import brasaWelcome1 from '../images/eventBrasaWelcome/BrasaWelcome-1.jpeg';
 import brasaWelcome2 from '../images/eventBrasaWelcome/BrasaWelcome-2.jpeg';
 import brasaWelcome3 from '../images/eventBrasaWelcome/BrasaWelcome-3.jpeg';
@@ -19,6 +20,9 @@ import summitBrasa3 from '../images/eventSummitInovation/summitInovationBrasa (3
 import summitBrasa4 from '../images/eventSummitInovation/summitInovationBrasa (4).jpeg';
 import summitBrasa5 from '../images/eventSummitInovation/summitInovationBrasa (5).jpeg';
 import summitBrasa6 from '../images/eventSummitInovation/summitInovationBrasa (6).jpeg';
+import brasaSummitFlyer from '../images/eventBrasaSummitAmericas2025/brasaSummit2025flyer.jpg';
+import brasaKickOffFlyer from '../images/eventBrasaKickOff/flyer brasa kickoff.jpeg';
+
 
 const summitBrasaImages = [
   { src: summitBrasa1, alt: "Summit Innovation BRASA 1" },
@@ -46,6 +50,25 @@ const sunsetBrasaImages = [
   { src: brasaSunset8, alt: "Brasa Sunset 8" }
 ];
 
+const events = [
+  {
+    id: 1,
+    title: "BRASA KICK-OFF",
+    date: "26 de Setembro de 2025",
+    desc: "O primeiro evento do semestre na nossa universidade, reunindo estudantes brasileiros e internacionais para se conhecerem, compartilharem experiências e fortalecerem a comunidade acadêmica. Será um momento de integração, networking e muita energia para darmos início às iniciativas da BRASA neste ano!",
+    flyer: brasaKickOffFlyer,
+    link: "https://getinvolved.fgcu.edu/organization/httpswwwgobrasaorg",
+  },
+  {
+    id: 2,
+    title: "BRASA Summit Américas 2025",
+    date: "11 e 12 de Outubro de 2025",
+    desc: "Uma conferência que será realizada em Boston e reunirá diversas BRASAs de diferentes universidades da América do Norte. Durante o evento, você poderá assistir a palestras com líderes de diversas áreas, conhecer iniciativas de impacto e explorar oportunidades acadêmicas e profissionais.",
+    flyer: brasaSummitFlyer,
+    link: "https://portalbrasa.gobrasa.org/eventos",
+  },
+];
+
 function Events() {
   return (
     <div className="bg-white min-h-screen pt-24">
@@ -55,45 +78,52 @@ function Events() {
         </h1>
 
         
-        {/* <div className="p-4 sm:p-6 md:p-8 h-auto md:h-96 shadow-xl rounded-lg bg-white grid grid-cols-1 md:grid-cols-5 gap-4">
-          <img src={logoBrasa} className="w-full h-48 md:h-full object-contain" />
-          <div className="col-span-1 md:col-span-3 flex flex-col justify-center p-2 md:p-4">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-green-800">20th Annual RHA Casino Night</h1>
-            <h2 className="text-sm sm:text-lg md:text-xl text-gray-500 mb-2 md:mb-4">22 de Agosto de 2025</h2>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-4 md:mb-6">
-              Em parceria com o Resident Housing Association (RHA), A BRASA FGCU estará presente no Casino Night que será realizado no dia 22/08.
-              O evento contará com comida e presentes grátis. Jogue nas mesas do cassino para adquirir tickets e concorrer a diversos prêmios no fim da noite.
-            </p>
-            <button className="px-4 py-2 md:px-6 md:py-3 bg-green-600 text-white text-sm md:text-lg rounded-lg hover:bg-green-700 transition-colors duration-300">
-              Mais Informações
-            </button>
-          </div>
-        </div> */}
+        <div className="max-w-6xl mx-auto">
+            {events.map((event) => (
+              <div
+                key={event.id}
+                className="p-4 sm:p-6 md:p-8 h-auto md:h-96 shadow-xl rounded-lg bg-white grid grid-cols-1 md:grid-cols-5 gap-4 mb-6"
+              >
+                
+                <img
+                  src={event.flyer}
+                  alt={`${event.title} Flyer`}
+                  className="w-full h-48 md:h-full object-contain mx-auto"
+                />
 
-        
-        <div className="p-4 sm:p-6 md:p-8 h-auto md:h-96 shadow-xl rounded-lg bg-white grid grid-cols-1 md:grid-cols-5 gap-4 mt-4">
-          <img src={logoBrasa} className="w-full h-48 md:h-full object-contain" />
-          <div className="col-span-1 md:col-span-3 flex flex-col justify-center p-2 md:p-4">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-green-800">BRASA Summit Américas 2025</h1>
-            <h2 className="text-sm sm:text-lg md:text-xl text-gray-500 mb-2 md:mb-4">11 e 12 de Outubro de 2025</h2>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-4 md:mb-6">
-              Uma conferência que será realizada em Boston e reunirá diversas BRASAs de diferentes universidades da América do Norte.
-              Durante o evento, você poderá assistir a palestras com líderes de diversas áreas, conhecer iniciativas de impacto e explorar oportunidades acadêmicas e profissionais.
-            </p>
-            <button className="px-4 py-2 md:px-6 md:py-3 bg-green-600 text-white text-sm md:text-lg rounded-lg hover:bg-green-700 transition-colors duration-300">
-              Mais Informações
-            </button>
+                
+                <div className="col-span-1 md:col-span-3 flex flex-col justify-center p-2 md:p-4">
+                  <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-green-800">
+                    {event.title}
+                  </h1>
+                  <h2 className="text-sm sm:text-lg md:text-xl text-gray-500 mb-2 md:mb-4">
+                    {event.date}
+                  </h2>
+                  <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-4 md:mb-6">
+                    {event.desc}
+                  </p>
+                  <Link
+                    to={event.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center px-4 py-2 md:px-6 md:py-3 
+                              bg-green-600 text-white text-sm md:text-lg rounded-lg 
+                              hover:bg-green-700 transition-colors duration-300 text-center"
+                  >
+                    Mais Informações
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
 
-      
       <div className="pt-8">
         <h1 className="underline underline-offset-4 text-2xl sm:text-3xl md:text-5xl font-lato mb-8 md:mb-16 font-bold text-black text-center">
           Confira os últimos eventos da BRASA FGCU
         </h1>
 
-        <div className="mb-12 md:mb-16 px-4 sm:px-12 md:px-72">
+        <div className="mb-12 md:mb-16 px-4 sm:px-12 md:px-72 max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-center">Welcome to BRASA</h2>
           <p className="text-center text-gray-700 mb-4 md:mb-6">Spring 2025</p>
           <Slider images={welcomeBrasaImages} />
@@ -101,7 +131,7 @@ function Events() {
 
         <hr className="border-t-2 border-gray-300 mx-12 md:mx-48 my-8 md:my-12" />
 
-        <div className="mb-12 md:mb-16 px-4 sm:px-12 md:px-72">
+        <div className="mb-12 md:mb-16 px-4 sm:px-12 md:px-72 max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-center">BRASA Sunset</h2>
           <p className="text-center text-gray-700 mb-4 md:mb-6">Spring 2025</p>
           <Slider images={sunsetBrasaImages} />
@@ -109,7 +139,7 @@ function Events() {
 
         <hr className="border-t-2 border-gray-300 mx-12 md:mx-48 my-8 md:my-12" />
 
-        <div className="mb-12 md:mb-16 px-4 sm:px-12 md:px-72">
+        <div className="mb-12 md:mb-16 px-4 sm:px-12 md:px-72 max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-center">BRASA Summit Innovation</h2>
           <p className="text-center text-gray-700 mb-4 md:mb-6">Spring 2025</p>
           <Slider images={summitBrasaImages} />

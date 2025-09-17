@@ -2,7 +2,18 @@ import { Link } from "react-router-dom";
 import coverPageImg from '../images/home-page-cover.jpeg';
 import freshman_image from '../images/brasa-sunset.jpeg'
 import EventsCarousel from "../components/EventsCarousel";
+import Slider from "../components/Slider";
 
+
+import eagleX2 from "../images/eventEagleX/eagleX2.jpeg"
+import eagleX3 from "../images/eventEagleX/eagleX3.jpeg"
+
+const eagleXimages = [
+{ src: eagleX3, alt: "Eagle X BRASA 3" },
+  { src: eagleX2, alt: "Eagle X BRASA 2" },
+  
+  
+];
 
 function Home() {
     return (
@@ -80,7 +91,83 @@ function Home() {
             </div>
 
             
-            <div className="pt-2">
+            
+            <div className="flex justify-center pt-16 pb-16 bg-gradient-to-r from-yellow-100 via-green-100 to-green-200">
+                <div className="w-full px-4 sm:px-8 md:px-16 max-w-7xl">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    
+                    
+                    <div className="bg-white/90 backdrop-blur-md p-8 rounded-2xl shadow-2xl border-l-8 border-green-700">
+                        <h1 className="text-4xl sm:text-5xl font-serif font-bold mb-6 text-green-700 tracking-tight leading-snug">
+                        DESTAQUE BRASA
+                        </h1>
+                        <p className="mb-6 text-lg sm:text-xl font-light text-gray-800 leading-relaxed italic">
+                        A BRASA FGCU foi reconhecida no 
+                        <span className="text-green-700 font-semibold"> Eagle X</span>, 
+                        um dos eventos mais prestigiados da Florida Gulf Coast University, 
+                        recebendo dois prêmios de grande relevância: 
+                        o <span className="text-green-700 font-semibold"> Best Independent Service-Learning Project Award </span> 
+                        e o <span className="text-green-700 font-semibold"> “Service to the Nest” Award</span>. 
+                        Essas conquistas refletem o impacto positivo da associação na comunidade, 
+                        promovendo a cultura brasileira, apoiando estudantes e fortalecendo laços por meio da educação e do engajamento comunitário.
+                        </p>
+                        <p className="text-gray-600 italic text-sm">
+                        Estamos muito orgulhosos de representar a nossa comunidade!
+                        </p>
+                    </div>
+
+                    
+                    <div className="bg-white/90 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-2xl flex justify-center items-center">
+                        <div className="w-full max-w-sm sm:max-w-md md:max-w-xl">
+                        <Slider images={eagleXimages} />
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div className="flex justify-center pt-16 pb-16 bg-gradient-to-r from-yellow-50 to-yellow-100">
+                <div className="w-full px-4 sm:px-8 md:px-16 max-w-5xl text-center">
+                    <h2 className="text-4xl sm:text-5xl font-serif font-bold mb-8 text-green-900">
+                    Conheça a FGCU
+                    </h2>
+                    <div className="flex justify-center">
+                        <div className="w-full max-w-3xl shadow-2xl rounded-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                            <div className="aspect-video">
+                            <iframe
+                                className="w-full h-full"
+                                src="https://www.youtube.com/embed/3nE-sKCLvI4?si=ORX4TVFuDy4q_6-x"
+                                title="FGCU video"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
+                            </div>
+                        </div>
+                    </div>
+                    <p className="mt-4 mb-4 text-gray-700 italic text-lg">
+                    Descubra a experiência única de estudar na Florida Gulf Coast University!
+                    </p>
+                    <a
+                        href="https://www.fgcu.edu/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-green-700 text-white text-base sm:text-lg font-medium uppercase tracking-wider 
+                                hover:bg-green-800 hover:scale-105 transition-all duration-300 shadow-lg"
+                    >
+                        Site Oficial FGCU
+                    </a>
+                </div>
+            </div>
+
+
+    
+
+            
+            <div className="">
                 <EventsCarousel />
             </div>
 

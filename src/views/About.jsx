@@ -35,13 +35,12 @@ function About() {
         </h1>
         <div className="py-8 sm:py-16 px-4 sm:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
-            { name: "Sara Teoro", role: "Presidente", photo: presidentPhoto },
-            { name: "Eduardo Ferreira", role: "Vice-Presidente", photo: vpPhoto },
+            { name: "Eduardo Ferreira", role: "Presidente", photo: vpPhoto },
+            { name: "Gabriel Correa", role: "Vice-Presidente", photo: secretaryPhoto },
             { name: "Dhaniel Coelho", role: "Tesoureiro", photo: treasurerPhoto },
-            { name: "Gabriel Correa", role: "Secretário", photo: secretaryPhoto },
+            { name: "Renan Santos", role: "Secretário", photo: socialCoordPhoto2},
             { name: "Rafaella Cardoso", role: "Coord. de Eventos", photo: eventCoordPhoto },
             { name: "João Tamez", role: "Social Media", photo: socialCoordPhoto1 },
-            { name: "Renan Santos", role: "Social Media", photo: socialCoordPhoto2 },
             { name: "Clarisse Halpern", role: "Advisor", photo: advisorPhoto1 },
           ].map((member, index) => (
             <div

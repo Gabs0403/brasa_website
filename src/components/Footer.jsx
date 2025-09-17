@@ -42,7 +42,7 @@ function Footer(){
               <FaInstagram />
             </a>
             
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-yellow-400">
+            <a href="https://www.linkedin.com/company/brasa-fgcu/posts/?feedView=all" target="_blank" rel="noreferrer" className="hover:text-yellow-400">
               <FaLinkedin />
             </a>
           </div>

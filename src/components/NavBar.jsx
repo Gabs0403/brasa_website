@@ -48,13 +48,15 @@ export default function Navbar() {
               >
                 Eventos
               </Link>
-              <Link
-                to="https://getinvolved.fgcu.edu/organization/httpswwwgobrasaorg"
+              <a
+                href="https://getinvolved.fgcu.edu/organization/httpswwwgobrasaorg"
+                target="_blank" 
+                rel="noopener noreferrer" 
                 
                 className="px-4 py-2 rounded-lg bg-green-600 text-white hover:bg-green-700 transition font-serif shadow-lg"
               >
                 Seja Membro!
-              </Link>
+              </a>
             </div>
 
             
@@ -95,14 +97,15 @@ export default function Navbar() {
                                         }} 
                    className="text-lg font-serif hover:text-green-700">Eventos
             </Link>
-            <Link
-              to="https://getinvolved.fgcu.edu/organization/httpswwwgobrasaorg"
+            <a
+              href="https://getinvolved.fgcu.edu/organization/httpswwwgobrasaorg"
               onClick={() => setIsOpen(false)}
               className="px-4 py-2 text-center rounded-lg bg-green-600 text-white hover:bg-green-700 transition font-serif shadow-lg"
-              target="_blank"
+              target="_blank" 
+              rel="noopener noreferrer" 
             >
               Seja Membro!
-            </Link>
+            </a>
           </div>
         </div>
 
